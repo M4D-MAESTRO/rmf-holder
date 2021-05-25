@@ -1,0 +1,124 @@
+ion-content {
+  --background: linear-gradient(#3c4144, #914c2c);
+}
+
+.img-holder {
+  ion-img {
+    max-width: 256px;
+    max-height: 256px;
+    outline: 3px outset #ffffff00;
+    outline-offset: 1px;
+    border-radius: 33px;
+    background-color: #ffffff10;
+  }
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.contato {
+  text-align: center;
+  color: white;
+  //border: 5px inset #050105;
+  outline: 3px outset #ffffff00;
+  outline-offset: 1px;
+
+  background-color: #292d3056;
+  margin-top: 50px;
+}
+
+.rede {
+  max-width: calc(100% - 50px);
+  max-height: 200px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.instagram {
+  border: 5px inset rgb(241, 49, 151);
+  border-radius: 5px;
+  fa-icon {
+    color: rgb(241, 49, 151);
+  }
+}
+
+.instagram:hover {
+  cursor: pointer;
+  color: rgb(241, 49, 151);
+}
+
+.youtube {
+  border: 5px inset rgb(220, 5, 5);
+  border-radius: 5px;
+  fa-icon {
+    color: rgb(220, 5, 5);
+  }
+}
+
+.youtube:hover {
+  cursor: pointer;
+  color: rgb(220, 5, 5);
+}
+
+.suporte {
+  border: 5px inset rgb(244, 127, 6);
+  border-radius: 5px;
+  fa-icon {
+    color: rgb(244, 127, 6);
+  }
+}
+
+.suporte:hover {
+  cursor: pointer;
+  color: rgb(244, 127, 6);
+}
+
+.btn-color {
+  border: 1px groove rgba(129, 79, 196, 0.28);
+  border-radius: 13px;
+  background: #000;
+  color: white;
+  min-width: 220px;
+}
+
+.playstore-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.web-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.plataform-icon {
+  font-size: 30px;
+  margin-right: 15px;
+  color: white;
+}
+
+.playstore-icon{
+  color: #db2b42
+}
+
+.web-icon{
+  color: #3880ff
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-center{
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,92 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-row class="ion-align-items-center">
+            <ion-col class="ion-align-self-center">
+                <div class="img-holder">
+                    <ion-img [src]="item.src"></ion-img>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col class="title">
+                <h1>RMF - RPG Manager Factory</h1>
+                <h3>Crie, gerencie e compartilhe!</h3>
+            </ion-col>
+        </ion-row>
+
+
+        <div class="plataforms">
+            <ion-row class="ion-justify-content-center">
+                <ion-col class="ion-align-self-center playstore-btn btn-center">
+                    <ion-button  class="btn-color" color="dark" size="large" fill="outline" expand="block" (click)="externalHandle('https://play.google.com/store/apps/details?id=com.ciano.rmf2')">Playstore
+                        <fa-icon class="plataform-icon playstore-icon" [icon]="['fab', 'google-play']" slot="start"></fa-icon>
+                    </ion-button>
+                </ion-col>
+                <ion-col class="ion-align-self-center web-btn btn-center">
+                    <ion-button class="btn-color" color="dark" size="large" fill="outline" expand="block" (click)="externalHandle('https://m4d-maestro.github.io/rmf/')">WEB
+                        <fa-icon class="plataform-icon web-icon" [icon]="['fas', 'globe']" slot="start"></fa-icon>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </div>
+
+
+        <div id="contato" class="contato">
+            <ion-row class="ion-align-items-center">
+                <ion-col class="ion-align-self-center">
+                    <h1>Nos siga ai!</h1>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row class="ion-align-items-center">
+                <ion-col size-md="4" size-xs="12" class="ion-align-self-center">
+                    <div class="rede instagram" (click)="externalHandle('https://www.instagram.com/rmf_rpg/')">
+                        <br>
+                        <fa-icon style="font-size: 50px;" [icon]="['fab', 'instagram']" slot="end"></fa-icon>
+                        <h3>INSTAGRAM</h3>
+                        <p>O canal de comunicação mais atualizado do R.M.F!</p>
+                    </div>
+                </ion-col>
+
+                <ion-col size-md="4" size-xs="12" class="ion-align-self-center">
+                    <div class="rede youtube"
+                        (click)="externalHandle('https://www.youtube.com/channel/UCYMA8YMr1_AMkx-pONmN0Ww')">
+                        <br>
+                        <fa-icon style="font-size: 50px;" [icon]="['fab', 'youtube']" slot="end"></fa-icon>
+                        <h3>YOUTUBE</h3>
+                        <p>Veja nossos tutoriais e lives de RPG</p>
+                    </div>
+                </ion-col>
+
+                <ion-col size-md="4" size-xs="12" class="ion-align-self-center">
+                    <div class="rede suporte" (click)="externalHandle('https://m4d-maestro.github.io/rmf/#/suporte')">
+                        <br>
+                        <fa-icon style="font-size: 50px;" [icon]="['fas', 'hands-helping']" slot="end"></fa-icon>
+                        <h3>SUPORTE</h3>
+                        <p>Precisando de mais informações, ou entrar em contato?</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <br>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ion-grid>
+
+
+</ion-content>
